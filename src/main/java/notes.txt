@@ -1,0 +1,43 @@
+A Program to demonstrate the use of @Order annotation:
+Programs:
+* DemandDraftPayment.java
+* OfflinePayment.java
+* OnlinePayment.java
+* OrderDetails.java
+* Payment.java
+* Product.java
+* AppConfig.java
+* Test.java
+Note:
+* @Order annotation is defined the sort order of the beans or components.
+* @Order annotation before Spring 4.0 supported only the ordering of AspectJ aspects. Since Spring 4.0, it supports many kinds of components.
+* @Order annotation can be used at class level, method level and field level.
+* @Order annotation is accept value attribute, the default value of value attribute is 2147483647
+* Low value has high priority. 
+Output:
+Number of Beans: 14
+---------- Beans Names ---------
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+appConfig
+demandDraftPayment
+offlinePayment
+onlinePayment
+orderDetails
+iphone
+mi
+samsung
+oneplus
+------ List of Products -------
+Product [productName=OnePlus-N21, quantity=9, price=65000.0, vendor=OnePlus]
+Product [productName=Samsung-Galaxy, quantity=6, price=55000.0, vendor=Samsung]
+Product [productName=Mi-Y2, quantity=12, price=25000.0, vendor=Xiomi]
+Product [productName=Iphone-15Pro, quantity=12, price=75000.0, vendor=Applie]
+------- List of Payments -------
+Payment is: DemandDraft
+Payment is: Online
+Payment is: Offline
+
